@@ -1,0 +1,77 @@
+<resources>
+    <color name="colorPrimary">#CD040B</color>
+    <color name="colorPrimaryDark">#990308</color>
+    <color name="colorAccent">#F9B295</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="bg_color">#ffffff</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="red">#ED1C24</color>
+    <color name="dark_red">#8B0000</color>
+    <color name="green">#008000</color>
+    <color name="ListDividerColor">#66808080</color>
+    <color name="dark_grey">#1e1e1e</color>
+    <color name="light_grey">#f2f2f2</color>
+    <color name="blue">#2e67b2</color>
+    <color name="bg_red">#ed1c24</color>
+    <color name="window_background">#eeeeee</color>
+    
+    <color name="navpanel_bg">#161618</color>
+
+
+    <color name="query_hint_text_color">#d2d2d2</color>
+    <color name="light_blue">#0EBFE9</color>
+
+    <color name="bg_gradient_start">#31244e</color>
+    <color name="bg_gradient_end">#6b394c</color>
+
+    <color name="brand01">#ed1c24</color>
+    <color name="brand01touch">#c0171d</color>
+
+    <color name="grey01">#333333</color>
+    <color name="grey01touch">#414141</color>
+
+    <color name="grey02">#595a5d</color>
+    <color name="grey02touch">#656668</color>
+    <color name="grey25">#6d6d6d</color>
+
+    <color name="grey03">#9b9b9b</color>
+    <color name="grey03touch">#a3a3a3</color>
+    <color name="grey04">#bbbbbb</color>
+    <color name="grey04touch">#e1e3e4</color>
+
+    <color name="grey05">#d2d3d4</color>
+    <color name="grey05touch">#dbdbdb</color>
+
+    <color name="grey06">#ecedee</color>
+    <color name="grey06touch">#e1e3e4</color>
+
+    <color name="whitetouch">#f6f6f6</color>
+    <color name="brand02">#4a9a4d</color>
+    <color name="brand03">#2e67b2</color>
+    <color name="brand04">#3195a9</color>
+
+    <color name="bg_gray_1">#E4E5E3</color>
+    <color name="bg_gray">#F6F6F6</color>
+    <color name="charcoal">#333333</color>
+    <color name="gray">#4B4B4B</color>
+    <color name="light_gray">#959595</color>
+    <color name="lighter_gray">#CCCCCC</color>
+    <color name="button_hover_red">#A80309</color>
+    <color name="button_pressed_red">#990308</color>
+    <color name="text_link_active">#0066CC</color>
+    <color name="text_link_hover">#00478E</color>
+
+    <!-- pops of color -->
+    <color name="teal">#82CEAC</color>
+    <color name="sky">#ABE0F9</color>
+    <color name="gold">#FBD362</color>
+    <color name="salmon">#F9B295</color>
+
+    <!-- secondary colors -->
+    <color name="green_secondary">#E9F8E9</color>
+    <color name="blue_secondary">#E8F6FE</color>
+    <color name="yellow_secondary">#FEFFE4</color>
+    <color name="orange_secondary">#FEF0E8</color>
+</resources>
