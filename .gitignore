@@ -14,7 +14,6 @@ gen/
 out/
 
 # Gradle files
-.gradle/
 build/
 
 # Local configuration file (sdk path, etc)
@@ -34,7 +33,13 @@ captures/
 
 # Intellij
 *.iml
-.idea/workspace.xml
+.idea/
 
 # Keystore files
 *.jks
+.gradle/2.14.1/taskArtifacts/cache.properties
+*.bin
+.gradle/2.14.1/taskArtifacts/cache.properties.lock
+*.lock
+example/proguard-rules.pro
+simplerecyclerview/proguard-rules.pro
