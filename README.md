@@ -3,6 +3,7 @@ Android RecyclerView Library that abstracts the boiler plate code. It handles mu
 
 
 
+
 ##License
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -16,9 +17,6 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-Parent class for generic RecyclerView View Holders. Provides method definitions to create the View Holder
-elements then configure and populate them based on the provided data model of generic type.
-The data model should be set during the configuration method.
 
 
 ##License For Facebook Rebound
