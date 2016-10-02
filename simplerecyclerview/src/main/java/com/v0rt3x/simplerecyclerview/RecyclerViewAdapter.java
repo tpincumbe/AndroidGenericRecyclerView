@@ -124,25 +124,30 @@ public class RecyclerViewAdapter<T extends RecyclerViewDataModel> extends Recycl
                 if (viewTreeObserver.isAlive()) {
                     viewTreeObserver.removeOnGlobalLayoutListener(this);
                 }
-                List<Spring> springs = mSpringChain.getAllSprings();
-                int width = recyclerView.getWidth();
 
-                for (int i = 0; i < springs.size(); i++) {
-                    springs.get(i).setCurrentValue(-width);
-                }
+                if (layoutType == Constants.LayoutType.LINEAR) {
+                    List<Spring> springs = mSpringChain.getAllSprings();
+                    int width = recyclerView.getWidth();
 
-                recyclerView.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        if (mSpringChain.getAllSprings().size() > 0) {
-                            mSpringChain.setControlSpringIndex(0)
-                                    .getControlSpring()
-                                    .setEndValue(0);
-                        }else {
-                            Log.e("RecyclerViewAdapter", "Please set the appropriate spring listener in your View Holder(s)");
-                        }
+                    for (int i = 0; i < springs.size(); i++) {
+                        springs.get(i).setCurrentValue(-width);
                     }
-                }, 500);
+
+                    recyclerView.postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            if (mSpringChain.getAllSprings().size() > 0) {
+                                mSpringChain.setControlSpringIndex(0)
+                                        .getControlSpring()
+                                        .setEndValue(0);
+                            } else {
+                                Log.e("RecyclerViewAdapter", "Please set the appropriate spring listener in your View Holder(s)");
+                            }
+                        }
+                    }, 500);
+                }else {
+                    mSpringChain.setControlSpringIndex(0).getControlSpring().setEndValue(1);
+                }
             }
         });
     }

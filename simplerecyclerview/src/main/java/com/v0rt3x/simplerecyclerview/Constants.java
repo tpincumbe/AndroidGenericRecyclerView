@@ -3,7 +3,7 @@ package com.v0rt3x.simplerecyclerview;
 import android.support.v7.widget.GridLayoutManager;
 
 /**
- * Created by v0rt3x on 10/1/2016.
+ * Created by Tim Pincumbe on 10/1/2016.
  */
 
 public class Constants {

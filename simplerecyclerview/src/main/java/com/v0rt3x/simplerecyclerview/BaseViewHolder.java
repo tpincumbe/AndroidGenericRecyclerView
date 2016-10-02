@@ -1,6 +1,7 @@
 package com.v0rt3x.simplerecyclerview;
 
 import android.content.Context;
+import android.graphics.Point;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -93,7 +94,15 @@ public abstract class BaseViewHolder<T extends RecyclerViewDataModel> {
                 break;
             case GRID:
             case STAGGERED:
-
+                viewSpringListener = new SimpleSpringListener() {
+                    @Override
+                    public void onSpringUpdate(Spring spring) {
+                        float value = (float) spring.getCurrentValue();
+                        view.setScaleX(value);
+                        view.setScaleY(value);
+                        view.setAlpha(value);
+                    }
+                };
                 break;
         }
     }

@@ -53,14 +53,15 @@ public class ExampleViewHolder extends BaseViewHolder<Example> {
         this.mData = mData;
         iconBGView.setColorFilter(Color.parseColor(mData.getImageBackgroundColor()), PorterDuff.Mode.SRC_ATOP);
         iconImageView.setImageResource(mData.getImage());
-        iconNumberTextView.setText(mData.getNumberHits());
         String numberHits = mData.getNumberHits();
-        if (numberHits != null && !numberHits.isEmpty())
+        if (numberHits != null && !numberHits.isEmpty()) {
             iconNumberTextView.setVisibility(View.VISIBLE);
+            iconNumberTextView.setText(mData.getNumberHits());
+        }
         titleTextView.setText(mData.getTitle());
         messageTextView.setText(mData.getMessage());
         int actionImage = mData.getActionImage();
-        if (actionImage != 0) {
+        if (actionImageView != null && actionImage != 0) {
             actionImageView.setImageResource(mData.getActionImage());
             actionImageView.setVisibility(View.VISIBLE);
         }
